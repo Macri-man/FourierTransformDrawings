@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Rose Curve (adjustable k)",
+    "mode": "polar",
+    "expr_r": "cos(k*t)",
+    "params": {
+      "k": [
+        3,
+        1,
+        10
+      ]
+    },
+    "range": [
+      0,
+      6.283185307179586
+    ]
+  },
+  {
+    "name": "Lissajous Curve (a,b adjustable)",
+    "mode": "parametric",
+    "expr_x": "cos(a*t)",
+    "expr_y": "sin(b*t)",
+    "params": {
+      "a": [
+        3,
+        1,
+        10
+      ],
+      "b": [
+        2,
+        1,
+        10
+      ]
+    },
+    "range": [
+      0,
+      6.283185307179586
+    ]
+  },
+  {
+    "name": "Hypotrochoid (adjustable coefficients)",
+    "mode": "parametric",
+    "expr_x": "a*cos(t) + b*cos(2*t)",
+    "expr_y": "a*sin(t) - b*sin(2*t)",
+    "params": {
+      "a": [
+        2,
+        0.5,
+        5
+      ],
+      "b": [
+        1,
+        0.5,
+        3
+      ]
+    },
+    "range": [
+      0,
+      6.283185307179586
+    ]
+  },
+  {
+    "name": "Epicycloid (adjustable)",
+    "mode": "parametric",
+    "expr_x": "a*cos(3*t) - b*cos(t)",
+    "expr_y": "a*sin(3*t) - b*sin(t)",
+    "params": {
+      "a": [
+        1,
+        0.5,
+        3
+      ],
+      "b": [
+        0.5,
+        0.1,
+        1
+      ]
+    },
+    "range": [
+      0,
+      6.283185307179586
+    ]
+  },
+  {
+    "name": "Animated Spiral",
+    "mode": "polar",
+    "expr_r": "a*t",
+    "params": {
+      "a": [
+        0.1,
+        0.05,
+        0.5
+      ]
+    },
+    "range": [
+      0,
+      12.566370614359172
+    ]
+  }
+]
